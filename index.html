@@ -2,12 +2,49 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <script src='scripts/eth1.js' type="module"></script>
 </head>
 <body>
+    <h1>Task 1</h1>
+
     <h2>Input your address here:<br></h2>
-    <input type="text" name="inputedAddress"><br>
-    <button id="checkButton">Check</button><br>
-    <h3 id="result"></h3>
+    <input type="text" id="inputedAddress"><br>
+    <button id="checkBalanceButton">Check balance</button><br>
+    <h3 id="resultBalance"></h3>
+
+    <script src='scripts/eth1.js' type="module"></script>
+
+    <br><br>
+    <h1>Task 2</h1>
+
+    <h2>Input your private key from Metamask</h2>
+    <input type="text" id="privateKey"><br>
+
+    <h2>Input address you transfering to and ethers amount</h2>
+    <input type="text" id="transferToAddress">
+    <input type="number" id="transferToAmount"><br>
+    <button id="transferButton">Transfer</button><br>
+    <h3 id="resultHash"></h3>
+
+    <script src='scripts/eth2.js' type="module"></script>
+
+    <br><br>
+    <h1>Task 4</h1>
+
+    <h2>Input the address of token you want transfer:</h2>
+    <input type="text" id="tokenContractAddress"><br>
+    <button id="connectToTokenButton">Connect to token contract</button><br>
+    <p id="tokenInfo"></p>
+
+    <h2>Input address you transfering to and tokens amount</h2>
+    <input type="text" id="tokensTransferToAddress">
+    <input type="number" id="tokensTransferToAmount"><br>
+    <button id="addTransactionButton">Add transaction</button>
+    <button id="checkTransactionsButton">Show all transactions</button><br>
+    <p id="transactionsList"></p>
+
+    <button id="sendButton">Send tokens</button>
+
+    <script src='scripts/eth4.js' type="module"></script>
+
 </body>
 </html>
